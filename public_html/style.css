@@ -1,0 +1,193 @@
+body{
+
+	margin: 0;
+	padding: 0;
+	font-family: 'Fredoka One', cursive;
+	font-size: 16px;
+	overflow-x: hidden;
+	
+}
+  .navbar{
+background-color: white!important;
+  }
+
+   nav  img{
+	width: 60%;
+}
+
+.welmes{
+background-color: #DB3A34;
+color: white;
+font-size: 15px;
+
+}
+
+.welmes p{
+padding-top: 10px;
+
+}
+
+#showcase{
+	height: 95vh;
+	 background: black url(bck.jpg) center center no-repeat;;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+#showcase .showtext{
+
+	padding-top: 300px;
+	color: white;
+	line-height: 30px;
+}
+
+#showcase .show3{
+
+	color: #DCDCDC;
+}
+
+#showcase p{
+
+	font-size: 23px;
+	font-family: 'helvetica', sans-serif;
+}
+
+#showcase h1{
+
+	font-size: 50px;
+}
+
+.welmes2{
+
+	background-color: #E7EBF2;
+	padding: 20px;
+	margin-bottom: 50px;
+}
+
+#welmes3{
+
+	font-family: 'helvetica', sans-serif;
+	margin-bottom: 50px;
+}
+
+#welmes3 h1{
+	color: #BA8748;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#welmes3 p{
+	font-size: 22px;
+}
+
+#welmes3 .show3{
+	font-size: 17px;
+}
+
+#showcase2{
+	height: 80vh;
+	 background: black url(about2.jpg) center center no-repeat;;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+padding-top: 50px;
+color: white;
+margin-bottom: 150px;
+}
+
+
+#showcase2 .showcase2text{
+
+	padding-top: 10px;
+}
+
+#updates .uptext{
+
+	padding-bottom: 40px;
+}
+
+#updates p{
+
+	font-family: 'helvetica', sans-serif;
+
+}
+
+
+#updates img{
+	padding-bottom: 30px;
+}
+
+
+
+#showcasemem{
+	height: 50vh;
+	 background: black url(bck2.jpg) center center no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+color: white;
+padding-top: 70px;
+margin-bottom: 90px;
+margin-top: 50px;
+}
+
+#showcasemem h1{
+	font-size: 40px;
+}
+
+#showcasemem .showmem2{
+	font-size: 21px;
+	font-family: 'helvetica', sans-serif;
+}
+
+#showcasemem p{
+	font-family: 'helvetica', sans-serif;
+}
+
+#resources{
+	margin-bottom: 80px;
+}
+
+
+#resources p{
+	font-family: 'helvetica', sans-serif;
+}
+
+
+#resources img{
+	padding-bottom: 30px;
+}
+
+#resources h2{
+	padding-bottom: 10px;
+}
+
+#resources .resp{
+	padding-bottom: 20px;
+}
+
+.getname{
+
+	 background-color: #E7EBF2;
+	 padding: 80px;
+}
+
+.footer{
+	background-color: #021624;
+	color: white;
+	padding: 50px;
+}
+
+.footer p{
+	font-family: 'helvetica', sans-serif;
+}
+
+
+
+.aboutsec .container p{
+	text-align: justify;
+}

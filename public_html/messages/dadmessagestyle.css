@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #c2b1b1;
+}
+
+nav a img{
+    width: 100px;
+    height: 100px;
+}
+
+.messagesproper{
+    margin-top: 50px;
+}
+
+.messagesproper .messagepack{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.messagesproper .messagepack .box{
+    border-radius: 25px;
+    background: #d3c0c0;
+    box-shadow:  9px 9px 18px #c2b1b1,
+             -9px -9px 18px #e4cfcf;
+    flex-basis: 30%;
+    padding: 25px;
+    
+}
+
+
+
+
+
+@media (max-width:776px){
+    .messagesproper .messagepack{
+        display: block;
+        
+    }
+    
+    .messagesproper .messagepack .box{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    
+}
+
+   
+   

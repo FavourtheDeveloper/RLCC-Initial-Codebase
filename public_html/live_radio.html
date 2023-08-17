@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <title>Live Radio</title>
+    
+    <style>
+
+      body{
+          background-color: rgb(6, 0, 41)
+      }
+      
+      #textstyle {
+          background-color: yellow;
+          padding: 10px 0;
+          margin-bottom: 15px;
+          color: black;
+      }
+
+      .text-center h5{
+          color: white;
+          padding: 20px;
+      }
+
+      .formz{
+        background-color: yellow;
+        padding: 20px;
+      }
+
+      .formz form input{
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 300px;
+      }
+
+      .formz form #submit{
+        border: 1px solid black;
+        background-color: red;
+      }
+
+      .formz form #message{
+        height: 70px;
+      }
+      
+      
+  </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="http://riversoflovechristiancentre.org"><img src="logo.png" alt="Church Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <form class="form-inline my-2 my-lg-0 ml-auto">
+            <a href="https://riversoflovechristiancentre.org"><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Home</button></a>
+          </form>
+        </div>
+      </nav>
+
+
+      <div class="sermon container text-center">
+        <div class="spinner-grow" tyle="text-align: center;" role="status" style="margin: 50px 0 30px 0;">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow" role="status" style="margin: 30px 0;">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow" role="status" style="margin: 30px 0;">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow" role="status" style="margin: 30px 0;">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow" role="status" style="margin: 30px 0;">
+            <span class="sr-only">Loading...</span>
+          </div>
+          
+          
+          <div class="text-center">
+              <div id="textstyle">
+                  <h1> Welcome to the RLCC LIVE BROADCAST</h1>
+              </div>
+              <iframe src="//www.radiojar.com/widget/radio/fhu3eu5ucuhvv/player/?trackinfo&autoplay_off" frameborder="0" width="330" height="200" scrolling="no"></iframe>
+              <h5>For Testimonies, Questions or Prayer Request, Fill the form below...</h5>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12" style="margin: 20px 0px;">
+              <img src="conven2023.jpg" class="img-fluid img-container">
+           </div>
+          </div>
+
+          <div class="formz container">
+            <form action="send.php" method="post">
+              <label for="name">Name: </label>
+              <input type="text" name="name" id="name" placeholder="Enter your name" required>
+              <br>
+              <label for="email">Email: </label>
+              <input type="email" name="email" id="email" placeholder="Enter your valid Mail" required>
+              <br>
+              <label for="subject">Subject: </label>
+              <input type="text" name="subject" id="subject" placeholder="Question/Prayer Request/Testimony" required>
+              <br>
+              <label for="message">Message: </label>
+              <input type="text" name="message" id="message" placeholder="Type your message here" required>
+              <br>
+              <input type="submit" name="submit" id="submit">
+
+
+            </form>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+        <div class="spinner-grow" tyle="text-align: center;" role="status" style="margin: 30px 0;">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow" role="status" style="margin: 30px 0;">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow" role="status" style="margin: 30px 0;">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow" role="status" style="margin: 30px 0;">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow" role="status" style="margin: 30px 0;">
+            <span class="sr-only">Loading...</span>
+          </div>
+      </div>
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="shortcut icon" type="image/jpg" href="logo.png"/>
+    <title>RLCC QUIZ</title>
+
+    <style>
+        body{
+            background-color: rgb(1, 2, 22);
+            width: 80%;
+            margin: auto;
+            font-size: 1.2rem;
+            font-weight: bolder;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        h1 {
+            background-color: red;
+            padding: 10px;
+            position: fixed;
+            border-radius: 20px;
+            top: 0;
+            right: 0;
+        }
+
+        .question{
+            color: yellow;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .button{
+            background-color: red;
+            border: 2px solid blue;
+            padding: 10px 15px;
+            color: whitesmoke;
+            font-size: 22px;
+        }
+
+        #userName{
+            padding: 15px;
+            border-radius: 2px solid blue;
+            border: none;
+        }  
+
+        .top{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #start{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #instr{
+            text-align: left;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="top">
+    <h2>RLCC QUIZ</h2>
+    <h1 id="count" class="hidden">300 secs</h1>
+    <input type="text" id="userName" placeholder="Enter your Name Here"> <br><br>
+    <div id="instr">
+    <h5>Read Carefully, the instructions below</h5>
+    <small>You are to attempt the Quiz only once</small> <br>
+    <small>A Timer has been programmed to submit automatically after countdown</small> <br>
+    <small>You have 30secs for each question which makes it a total of 300seconds for the completion of the quiz</small> <br>
+    <small>Please, you are to screenshot your score and send to the RLCC YOUTH Whatsapp Group 😊😊😊</small>
+    <hr>
+</div>
+    </div>
+    <div id="start">
+        <button class="button" onclick="startQuiz()">START QUIZ</button>
+    </div>
+    
+    <form name="quiz" id="quiz">
+        
+        <div id="firstq" class="hidden">
+            <p class="question">1. . The woman that told Jesus that "the dogs under the table eat of the children's crumbs" is of which nation?</p>
+            <p><input type="radio" name="question1" value="Samaritan"> (a) Samaritan</p>
+            <p><input type="radio" name="question1" value="Philistine"> (b) Philistine</p>
+            <p><input type="radio" name="question1" value="syrophenician"> (c) syrophenician</p>
+            <input type="button" onclick="Gotosec()" class="button" value="Next">
+        </div>
+
+        <div id="secondq" class="hidden">
+            <p class="question">2.According to Mark 10:30; Jesus promise everyone that gave up everything for his sake and gospel, hundred folds and ..........</p>
+            <p><input type="radio" name="question2" value="Joy"> (a) Joy</p>
+            <p><input type="radio" name="question2" value="Persecution"> (b) Persecution</p>
+            <p><input type="radio" name="question2" value="Peace"> (c) Peace</p>
+            <input type="button" onclick="Gotothird()" class="button" value="Next">
+        </div>
+    
+        <div id="thirdq" class="hidden">
+            <p class="question">3. Who is the father of Lot?</p>
+            <p><input type="radio" name="question3" value="Haran"> (a) Haran</p>
+            <p><input type="radio" name="question3" value="Nahor"> (b) Nahor</p>
+            <p><input type="radio" name="question3" value="Terah"> (c) Terah</p>
+            <input type="button" onclick="Gotofourth()" class="button" value="Next">
+        </div>
+         
+        <div id="fourthq" class="hidden">
+            <p class="question">4. "The grace of the Lord Jesus Christ, and the love of God and the communion of The Holy spirit, be with you all. Amen" can be found in? </p>
+            <p><input type="radio" name="question4" value="Luke 11:2"> (a) Luke 11:2</p>
+            <p><input type="radio" name="question4" value="2cor 13:14"> (b) 2cor 13:14</p>
+            <p><input type="radio" name="question4" value="John 13:14"> (c) John 13:14</p>
+            <input type="button" onclick="Gotofifth()" class="button" value="Next">
+        </div>
+           
+        <div id="fifthq" class="hidden">
+            <p class="question">5. What to do in time like this in our country?</p>
+            <p><input type="radio" name="question5" value="Prayer & fasting"> (a) Prayer & fasting</p>
+            <p><input type="radio" name="question5" value="Absolute trust in God"> (b) Absolute trust in God</p>
+            <p><input type="radio" name="question5" value="All of the above"> (c) All of the above</p>
+            <input type="button" onclick="Gotosixth()" class="button" value="Next">
+        </div>
+            
+        <div id="sixthq" class="hidden">
+            <p class="question">6. King David's wives gave birth to how many son in Hebron.</p>
+            <p><input type="radio" name="question6" value= 6> (a) 6</p>
+            <p><input type="radio" name="question6" value= 5> (b) 5</p>
+            <p><input type="radio" name="question6" value= 3> (c) 3</p>
+            <input type="button" onclick="Gotoseventh()" class="button" value="Next">
+        </div>
+       
+        <div id="seventhq" class="hidden">
+            <p class="question">7. Who is the first fishers of men according to the gospel.</p>
+            <p><input type="radio" name="question7" value="Jesus Christ"> (a) Jesus Christ</p>
+            <p><input type="radio" name="question7" value="Andrew"> (b) Andrew</p>
+            <p><input type="radio" name="question7" value="Peter">  (c) Peter</p>
+            <input type="button" onclick="Gotoeight()" class="button" value="Next">
+        </div>
+          
+        <div id="eightq" class="hidden">
+            <p class="question">8. The book of revelation is written by (a)  (b)  (c) </p>
+            <p><input type="radio" name="question8" value="John Mark"> (a) John Mark</p>
+            <p><input type="radio" name="question8" value="John the Baptist"> (b) John the Baptist</p>
+            <p><input type="radio" name="question8" value="John the beloved"> (c) John the beloved</p>
+            <input type="button" onclick="Gotonineth()" class="button" value="Next">
+        </div>
+       
+        <div id="ninethq" class="hidden">
+            <p class="question">9. The anchor Bible text for the topic "The devil knows that his time is short" on the church website is taken from.</p>
+            <p><input type="radio" name="question9" value="Rev 12:1-2"> (a) Rev 12:1-2</p>
+            <p><input type="radio" name="question9" value="Rev 12:10-12"> (b) Rev 12:10-12</p>
+            <p><input type="radio" name="question9" value="Rev 11:10-12"> (c) Rev 11:10-12</p>
+            <input type="button" onclick="Gototenth()" class="button" value="Next">
+        </div>
+           
+        <div id="tenthq" class="hidden">
+            <p class="question">10. Which of the disciple used to sleep on the breast of Jesus christ?.</p>
+            <p><input type="radio" name="question10" value="Peter"> (a) Peter</p>
+            <p><input type="radio" name="question10" value="James"> (b) James</p>
+            <p><input type="radio" name="question10" value="John"> (c) John</p>
+            <input type="button" id="done" class="button" value="I'm Done!" onclick="check()">
+        </div>
+
+       
+    </form>
+
+    <h3 id="reply"></h3>
+    
+     
+    
+
+</body>
+</html>

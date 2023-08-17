@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#book .row .col-lg-6 img{
+    width: 400px;
+    height: 500px;
+}
+
+#book .row .col-lg-6 p{
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+
+button {
+    --color: #560bad;
+    line-height: 2.5em;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    margin-top: 15px;
+    background-color: blue;
+    color: white;
+   }
+   
+
+
+
+
+   @media (max-width: 767px){
+
+    #book .row .col-lg-6 img{
+        height: 450px;
+    }
+    
+   }
